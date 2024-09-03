@@ -21,6 +21,10 @@ define Package/ViZible/description
 	A fully selfmade custom GUI, doesn't use or based on LuCI(except few packages)
 endef
 
+define Package/Compile
+
+endef
+
 define Package/ViZible/install
 	$(INSTALL_DIR) $(1)/www
 	$(INSTALL_DATA) ./dist/* $(1)/www/
