@@ -21,9 +21,14 @@ define Package/ViZible/description
 	A fully selfmade custom GUI, doesn't use or based on LuCI(except few packages)
 endef
 
+define Build/Prepare
+	mkdir -p /www
+	$(CP) -r ./dist/* /www
+endef
+
 define Package/ViZible/install
-	$(INSTALL_DIR) $(1)/www2
-	$(INSTALL_DATA) ./dist/* $(1)/www2/
+	$(INSTALL_DIR) $(1)/www
+	$(INSTALL_DATA) ./dist/* $(1)/www/
 endef
 
 $(eval $(call BuildPackage,ViZible))
