@@ -20,10 +20,6 @@ define Package/vizible/description
 	A fully selfmade custom GUI, doesn't use or based on LuCI(except few packages)
 endef
 
-define Package/Compile
-
-endef
-
 define Package/vizible/install
 	$(INSTALL_DIR) $(1)/www/assets
 	$(INSTALL_DATA) ./dist/favicon.svg $(1)/www/
