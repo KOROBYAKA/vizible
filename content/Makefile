@@ -4,7 +4,6 @@ PKG_NAME:=vizible
 PKG_VERSION:=1.0
 PKG_RELEASE:=1
 
-
 include $(INCLUDE_DIR)/package.mk
 
 PKG_FIXUP:=autoreconf
@@ -19,6 +18,10 @@ endef
 
 define Package/vizible/description
 	A fully selfmade custom GUI, doesn't use or based on LuCI(except few packages)
+endef
+
+define Package/Compile
+
 endef
 
 define Package/vizible/install
