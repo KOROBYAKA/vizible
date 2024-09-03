@@ -12,8 +12,8 @@ PKG_FIXUP:=patch-libtool
 PKG_FIXUP:=gettext-version
 
 define Package/ViZible
-	SECTION:="Section: ViZible GUI"
-	CATEGORY:="Category"
+	SECTION:=ViZible GUI
+	CATEGORY:=Category
 	TITLE:=GUI for OpenWrt by xfox111
 
 endef
