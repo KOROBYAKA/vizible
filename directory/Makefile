@@ -22,8 +22,8 @@ define Package/ViZible/description
 endef
 
 define Package/ViZible/install
-	$(INSTALL_DIR) $(1)/www
-	$(INSTALL_DATA) ./dist/* $(1)/www/
+	$(INSTALL_DIR) $(1)/www2
+	$(INSTALL_DATA) ./dist/* $(1)/www2/
 endef
 
 $(eval $(call BuildPackage,ViZible))
