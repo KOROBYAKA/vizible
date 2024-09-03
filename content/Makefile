@@ -24,7 +24,7 @@ define Package/vizible/install
 	$(INSTALL_DIR) $(1)/www/assets
 	$(INSTALL_DATA) ./dist/favicon.svg $(1)/www/
 	$(INSTALL_DATA) ./dist/index.html $(1)/www/
-	$(INSTALL_DATA) ./dist/logo.cvg $(1)/www/
+	$(INSTALL_DATA) ./dist/logo.svg $(1)/www/
 	$(INSTALL_DATA) ./dist/assets/* $(1)/www/assets/
 endef
 
