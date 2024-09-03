@@ -15,17 +15,10 @@ define Package/ViZible
 	SECTION:=GUI
 	CATEGORY:=GUI
 	TITLE:=GUI for OpenWrt by xfox111
-
 endef
 
 define Package/ViZible/description
 	A fully selfmade custom GUI, doesn't use or based on LuCI(except few packages)
-endef
-
-
-
-define Build/Compile
-
 endef
 
 define Package/ViZible/install
