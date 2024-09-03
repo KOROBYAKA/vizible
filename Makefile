@@ -18,6 +18,12 @@ define Package/ViZible
 
 endef
 
+define Package/ViZible/description
+	A fully selfmade custom GUI, doesn't use or based on LuCI(except few packages)
+endef
+
+
+
 define Build/Compile
 
 endef
