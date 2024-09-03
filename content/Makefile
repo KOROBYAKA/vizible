@@ -22,7 +22,12 @@ define Package/vizible/description
 endef
 
 define Package/vizible/install
-	$(INSTALL_DATA) ./dist/* $(1)/www/
+	$(INSTALL_DIR) $(1)/www/assets
+	$(INSTALL_DATA) ./dist/favicon.svg $(1)/www/
+	$(INSTALL_DATA) ./dist/index.html $(1)/www/
+	$(INSTALL_DATA) ./dist/logo.cvg $(1)/www/
+	$(INSTALL_DATA) ./dist/assets $(1)/www/
+	$(INSTALL_DATA) ./dist/assets/* $(1)/www/assets/
 endef
 
 $(eval $(call BuildPackage,vizible))
