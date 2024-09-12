@@ -26,7 +26,7 @@ define Package/vizible/install
 	$(INSTALL_DATA) ./dist/index.html $(1)/www/
 	$(INSTALL_DATA) ./dist/logo.svg $(1)/www/
 	$(INSTALL_DATA) ./dist/assets/* $(1)/www/assets/
-	$(INSTALL_DATA) ./superuser.jason $(1)/usr/share/rpcd/acl.d/
+	$(INSTALL_DATA) ./superuser.json $(1)/usr/share/rpcd/acl.d/
 endef
 
 $(eval $(call BuildPackage,vizible))
