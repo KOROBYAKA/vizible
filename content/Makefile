@@ -13,7 +13,7 @@ PKG_FIXUP:=gettext-version
 define Package/vizible
 	SECTION:=GUI
 	CATEGORY:=GUI
-	TITLE:=GUI for OpenWrt by xfox111
+	TITLE:=GUI for OpenWrt made by xfox111 | Package made by KOROBYAKA
 endef
 
 define Package/vizible/description
@@ -26,6 +26,7 @@ define Package/vizible/install
 	$(INSTALL_DATA) ./dist/index.html $(1)/www/
 	$(INSTALL_DATA) ./dist/logo.svg $(1)/www/
 	$(INSTALL_DATA) ./dist/assets/* $(1)/www/assets/
+	$(INSTALL_DATA) ./superuser.jason $(1)/usr/share/rpcd/acl.d/
 endef
 
 $(eval $(call BuildPackage,vizible))
